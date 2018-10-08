@@ -31,7 +31,7 @@ for i = 3:4
 %     figure;
     [di,filtered_fixed,transformed_moving] = differenceImages(fixed,moving,spacing,A,b,arguments_cell{i}{1},arguments_cell{i}{2},arguments_cell{i}{3},arguments_cell{i}{4});
     figure;
-    myView(filtered_fixed , spacing , crosshair);
+    myView(filtered_fixed , spacing , [56 100 64]);
     figure;
     myView(di , spacing , [56 100 64] , [-500 500], 'winter');
 end

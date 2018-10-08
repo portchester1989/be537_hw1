@@ -1,9 +1,9 @@
-function [di,filtered_fixed,transformed_moving] = differenceImages(fixed,moving,spacing,A,b,method,filter,sigma,radius,crosshair,crange)
+function [di,filtered_fixed,transformed_moving] = differenceImages(fixed,moving,spacing,A,b,method,filter,sigma,radius)
 % crosshair = vargin{1};
 % crange = vargin{2};
-if nargin < 10
-            crosshair = round(size(fixed) / 2);
-end
+% if nargin < 10
+%             crosshair = round(size(fixed) / 2);
+% end
 % if nargin < 11
 %             crange = [-1000 1000];
 % end
